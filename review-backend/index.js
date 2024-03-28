@@ -4,8 +4,10 @@ import mongodb from 'mongodb';
 import ReviewsDAO from './dao/reviewsDAO.js'; // DAO = data access object, Interacts with the database
 
 const MongoClient = mongodb.MongoClient; // This is the MongoDB client object used to interact with the MongoDB database.
-const mongo_username = process.env["MONGO_USERNAME"]; // access the evironment variable
-const mongo_password = process.env["MONGO_PASSWORD"];
+// const mongo_username = process.env["MONGO_USERNAME"]; // access the evironment variable. chris
+// const mongo_password = process.env["MONGO_PASSWORD"]; // chris92341
+const mongo_username = 'chris'; // access the evironment variable. chris
+const mongo_password = 'chris92341'; // chris92341
 // a URI is a generic term for identifying resources on the internet
 // URLs and URNs are specific types of URIs that serve different purposes.
 const uri = `mongodb+srv://${mongo_username}:${mongo_password}@moviecluster.pxa69kk.mongodb.net/?retryWrites=true&w=majority&appName=movieCluster`;
